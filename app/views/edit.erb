@@ -1,0 +1,10 @@
+
+	<form action="/edit/<%=@user.id%>" method="post">
+			 <input type="text" name="name" value=<%=@user.name%>>
+			  <input type="text" name="email" value=<%=@user.email%>>
+			  <input type="submit" value="Submit">
+	</form>  
+
+	<form action="/delete/<%=@user.id%>" method="post">
+		<input type="submit" value="Delete User">
+	</form>
